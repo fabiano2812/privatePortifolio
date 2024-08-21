@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <title>Hallo Wolrd</title>
+    <meta charset="UTF-8">
+<head>
+    <script src="https://gamerseo.com/js/app.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/portifolio/css/painel.css" rel="stylesheet">
+    <link href="https://gamerseo.com/css/fontello.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link href="style.css" rel="stylesheet">
+    <link href="https://gamerseo.com/css/services.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+
+  <nav class="navbar">
+    <ul class="navbar-menu">
+      <li><a href="#home">Projetos</a></li>
+      <li><a href="#skills">Experiência</a></li>
+      <li><a href="#landcapes">Landscapes</a></li>
+      <li><a href="#formName">Contato</a></li>
+    </ul>
+    <mat-icon class="hamburger-menu" (click)="toggleMobileMenu()">
+      menu
+    </mat-icon>
+  </nav>
+  <div class="mobile-menu" [class.active]="isMobileMenuActive">
+    <mat-icon class="close-menu" (click)="closeMobileMenu()">close</mat-icon>
+    <ul>
+      <li><a href="#home">Projetos</a></li>
+      <li><a href="#skills">Experiência</a></li>
+      <li><a href="#landcapes">Landscapes</a></li>
+      <li><a href="#formName">Contato</a></li>
+    </ul>
+  </div>
+</head>
+
+
+   
+    <main>
+  <section class="animate__animated animate__backInLeft">
+    <h1>
+      Hello👋<br />
+      This is <span class="name">Fabiano Vieira.</span><br />
+      I'm a Profissional
+    </h1>
+    <div class="typing-container">Software Engineer.</div>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/fabiano-vieira-205879251/" target="_blank">
+        <div class="social-btn flex-center linkedin">
+          <svg viewBox="0 0 24 24" height="24" width="24">
+            <path
+              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+            ></path></svg><span>in/ramontrndd</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/fabiano2812" target="_blank">
+        <div class="social-btn flex-center github">
+          <svg
+            viewBox="0 0 24 24"
+            height="24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+            ></path></svg><span>/ramontrndd</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <article class="card animate__animated animate__backInRight">
+    <header class="titlebar">
+      <span class="buttons">
+        <button class="minimize" aria-label="Minimize">
+          <svg x="0px" y="0px" viewBox="0 0 10.2 1">
+            <rect x="0" y="50%" width="10.2" height="1"></rect>
+          </svg>
+        </button>
+        <button class="maximize" aria-label="Maximize">
+          <svg viewBox="0 0 10 10">
+            <path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path>
+          </svg>
+        </button>
+        <button class="close" aria-label="Close">
+          <svg viewBox="0 0 10 10">
+            <polygon
+              points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1"
+            ></polygon>
+          </svg>
+        </button>
+      </span>
+    </header>
+    <section class="cppcode">
+      <pre id="pre"><code>
+  <span class="s1">const</span> <span class="s2">developer</span> <span class="operator">=</span> <span class="curlies">{ '{' }</span>
+    <span class="s1">name</span>: <span class="s2">'Fabiano vieira'</span>,
+    <span class="s1">skills</span>: <span class="rounds">[</span>
+    <span class="s2">  'Angular',</span>
+    <span class="s2">  'JavaScript ',</span>
+    <span class="s2">  'HTML5',</span>
+    <span class="s2">  'CSS3',</span>
+    <span class="s2">  'Java',</span>
+    <span class="s2">  'Bootstrap',</span>
+    <span class="s2">  'jQuery',</span>
+    <span class="s2">  'Sql'</span>
+    <span class="rounds">]</span>,
+    <span class="function">function()</span> <span class="curlies">{{ '{' }}</span>
+      <span class="s3">return</span> (
+        <span class="s4">this.hardWorker</span> <span class="operator">&&</span>
+        <span class="s4">this.problemSolver</span> <span class="operator">&&</span>
+        <span class="s4">this.skills.length</span> <span class="operator">&gt;=</span> 5
+      );
+    <span class="curlies">{{ '}' }}</span>
+  <span class="curlies">{ '}' }</span>
+      </code></pre>
+    </section>
+  </article>
+      
+</main>
+  <br>
+        <div>
+            <div class="skills">
+              <div class="skill_heading">
+                <h1>Experiência</h1>
+              </div>
+              <div class="skill">
+                <span class="skill_span">
+                  <img src="https://img.icons8.com/nolan/64/00C6FF/0072FF/html.png" alt="html_icon" />
+                  <br />
+                  <span class="name">HTML</span>
+                </span>
+                <span class="skill_span">
+                  <img src="https://img.icons8.com/nolan/64/00C6FF/0072FF/css-filetype.png" alt="css_icon" />
+                  <br />
+                  <span class="name">CSS</span>
+                </span>
+                <span class="skill_span">
+                  <img src="https://img.icons8.com/nolan/64/00C6FF/0072FF/js.png" alt="js_icon" />
+                  <br />
+                  <span class="name">JS</span>
+                </span>
+                <span class="skill_span">
+                    <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png" alt="java_icon" width="64" height="64" />
+                    <br />
+                    <span class="name">Java</span>
+                </span>
+                <span class="skill_span">
+                    <img src="https://img.icons8.com/?size=100&id=dSnah6CSCxRG&format=png&color=000000" alt="java_icon" width="64" height="64" />
+                    <br />
+                    <span class="name">Angular</span>
+                </span>
+                
+                <span class="skill_span">
+                  <img src="https://img.icons8.com/nolan/64/00C6FF/0072FF/sql.png" alt="sql_icon" />
+                  <br />
+                  <span class="name">SQL</span>
+                </span>
+                <span class="skill_span">
+                  <img src="https://img.icons8.com/nolan/64/00C6FF/0072FF/linux--v2.png" alt="linux--v2" />
+                  <br />
+                  <span class="name">Linux</span>
+                </span>
+                <span class="skill_span">
+                  <img src="https://img.icons8.com/nolan/64/00C6FF/0072FF/git.png" alt="git_icon" />
+                  <br />
+                  <span class="name">Git</span>
+                </span>
+                <span class="skill_span">
+                  <img src="https://img.icons8.com/nolan/64/00C6FF/0072FF/api.png" alt="api" />
+                  <br />
+                  <span class="name">API</span>
+                </span>
+                <span class="skill_span">
+                  <img src="https://img.icons8.com/nolan/64/00C6FF/0072FF/github.png" alt="github_icon" />
+                  <br />
+                  <span class="name">Github</span>
+                </span>
+             
+              </div>
+            </div>
+        </div>
+    <br>
+    
+
+    <section id="landcapes" style="background-image: linear-gradient(to right bottom, #000, #17050e, #210a1a, #290e28, #2e1239, #2e1541, #2c184a, #281c53, #281c52, #281c51, #281c51, #281c50);">
+        <div class="section-header" style="padding: 50px 0 0 0 !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 wrapper">
+                        <h2>Landscapes</h2>
+  <div class="grid-paysages">
+    <a href="https://unsplash.com/fr/photos/parking-de-scooters-blancs-a-proximite-de-limmeuble-Fk4soVK_x2w" target="_blank" class="lien-conteneur-photo">
+      <img src="https://images.unsplash.com/photo-1562829612-55b71f529a49?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="white motor scooter park near the building">
+      <div class="photo-hover">View photo</div>
+    </a>
+
+    <a href="https://unsplash.com/fr/photos/brun-arbres-nus-sous-le-ciel-bleu-pendant-la-journee-1Tf8X648BfA" target="_blank" class="lien-conteneur-photo">
+      <img src="https://images.unsplash.com/photo-1583833008338-31a6657917ab?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="brown bare trees under blue sky during daytime">
+      <div class="photo-hover">View photo</div>
+    </a>
+
+    <a href="https://unsplash.com/fr/photos/batiments-en-beton-blanc-et-gris-t9mr0d1igac" target="_blank" class="lien-conteneur-photo">
+      <img src="https://images.unsplash.com/photo-1575391304128-f11964816ef6?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="white and gray concrete buildings">
+      <div class="photo-hover">View photo</div>
+    </a>
+    
+    <a href="https://unsplash.com/fr/photos/signalisation-du-batiment-activee-pendant-la-nuit-ITu-L0FuPPk" target="_blank" class="lien-conteneur-photo">
+      <img src="https://images.unsplash.com/photo-1531931477284-7e16215c9540?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="building signage turned-on during nighttime">
+      <div class="photo-hover">View photo</div>
+    </a>
+    
+    <a href="https://unsplash.com/fr/photos/personne-portant-un-sac-marchant-devant-le-magasin-jCXMsJQTsQw" target="_blank" class="lien-conteneur-photo">
+      <img src="https://images.unsplash.com/photo-1532959928979-120739b438fb?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="person carrying bag walking in front of store">
+      <div class="photo-hover">View photo</div>
+    </a>
+    
+    <a href="https://unsplash.com/fr/photos/peu-de-gens-marchent-dans-la-rue-pres-des-batiments-pendant-la-nuit-n_5_5DHnIGI" target="_blank" class="lien-conteneur-photo">
+      <img src="https://images.unsplash.com/photo-1554744463-c41e9ecff248?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="few people walking on street near buildings during night time">
+      <div class="photo-hover">View photo</div>
+    </a>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+        <section id="contact" style="background-color: #065557;">
+            <div class="section-header" style="padding: 50px 0 0 0 !important;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 wrapper">
+                            <h2>Sobre</h2>
+                        </div>
+                        <section _ngcontent-ng-c1523654160=""><p _ngcontent-ng-c1523654160=""> Olá, meu nome é Fabiano Vieira. Sou estudante de Análise e Desenvolvimento de Sistemas, Sou formado em Ciencia da Computação e fazendo pós em Desenvolvimento web Full Stack, atualmente focado em aprofundar meu conhecimento em Angular e Java, habilidade também com JavaScript, Possuo também noções em banco de dados SQL. <br _ngcontent-ng-c1523654160=""> Além disso, tenho experiência no desenvolvimento de APIs. Estou sempre em busca de novas oportunidades para aprimorar minhas habilidades e contribuir para projetos desafiadores. </p></section>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content contact-form">
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div>
+                        <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-short-hair-man-with-vr-9606389-7766934.png?f=webp" alt="">
+                    </div>
+                    <form>
+                        <!-- Name -->
+                        <div class="form-group position-relative">
+                            <label for="formName" class="d-block">
+                                <i class="icon" data-feather="user"></i>
+                            </label>
+                            <h4>Nome</h4>
+                            <input  id="formName" class="form-control form-control-lg thick" placeholder="Fabiano vieira Guimaraes" readonly>
+                        </div>
+            
+                        <!-- E-mail -->
+                        <div class="form-group position-relative">
+                        <h4>Email</h4>
+                        <input id="formEmail" class="form-control form-control-lg thick" placeholder="fabianovgg00@gmail.com" readonly>
+                        </div>
+            
+                        <!-- Message -->
+                        <h4>Redes Sociais</h4>
+                        <div class="form-group message">
+                            <a href="https://www.facebook.com/fabiano.vieira.90813" class="btn btn-primary" target="_blank" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                              </a>
+                            
+                              <!-- Botão do Instagram -->
+                              <a href="https://www.instagram.com/fabiano.2812/" class="btn btn-danger" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                              </a>
+                              
+                              <!-- Botão do LinkedIn -->
+                              <a href="https://www.linkedin.com/in/fabiano-vieira-205879251/" class="btn btn-info" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                              </a>
+                              
+                              <!-- Botão do GitHub -->
+                              <a href="https://github.com/fabiano2812" class="btn btn-dark" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                              </a>
+                        </div>
+                       
+                
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+
+
+    
+    </main>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js'></script>
+    <script src='https://github.com/mrdoob/three.js/blob/master/src/constants.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script><script  src="./script.js"></script>
+    <script>
+        (function () {
+            let images = document.querySelectorAll('.service-content img');
+            let service_box = document.querySelector('.service-content');
+
+            for (const image of images) {
+                if (image.complete) {
+                    continue;
+                }
+
+                image.style.opacity = 0;
+
+                const offsetTop = image.offsetTop;
+                const offsetLeft = image.offsetLeft;
+                const div = document.createElement('div');
+
+                div.classList.add('placeholder');
+                div.dataset.src = image.src;
+
+                const height = image.clientHeight;
+                const width = image.clientWidth;
+
+                div.style.left = offsetLeft + 'px';
+                div.style.top = offsetTop + 'px';
+                div.style.position = 'absolute'
+                div.style.width = width + 'px';
+
+                const newWidth = service_box.clientWidth > width ? width : service_box.clientWidth;
+                const newHeight = (height / width) * newWidth;
+
+                div.style.height = newHeight + 'px';
+                service_box.appendChild(div);
+
+                image.addEventListener('load', ((e) => {
+                    const images = document.querySelectorAll(`.service-content img[src='${e.target.src}']`);
+
+                    images.forEach((item) => {
+                        item.style.opacity = 1;
+                    });
+
+                    const placeholders = document.querySelectorAll(`div[data-src='${e.target.src}']`);
+
+                    placeholders.forEach((item) => {
+                        item.classList.add('placeholder--hidden');
+                    });
+                }));
+            }
+        })();
+    </script>
+</body>
+
+</html>
